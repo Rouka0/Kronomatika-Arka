@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jam Dinding Elegan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 1rem 0;
+        }
+        .card p {
+            color: #666;
+            padding: 0 1rem;
+        }
+        .card button {
+            margin: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .card button:hover {
+            background-color: #555;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .nav-center {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-center a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .nav-center a:hover {
+            color: #1e90ff;
+        }
+
+        .contact {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .contact a:hover {
+            color: #25d366;
+        }
+
+        .contact img {
+            width: 20px;
+            height: 20px;
+        }
+        .home-section {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 50px;
+            background-color: #f4f4f4;
+            height: 100vh;
+        }
+
+        .home-content {
+            max-width: 600px;
+            margin-right: 50px;
+        }
+
+        .home-content h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .home-content p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .home-content .order-button {
+            margin-top: 20px;
+        }
+
+        .order-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .order-button a:hover {
+            background-color: #218838;
+        }
+
+        .product-image {
+            flex: 1;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        #about-me {padding: 40px;
+         background-color: #f4f4f4;
+           text-align: center;
+        }
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-image img {
+    width: 300px;
+    border-radius: 10px;
+}
+/* Styles for Steps to Shop Section */
+#steps-to-shop {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#steps-to-shop h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step-image img {
+    width: 150px;   /* Ukuran gambar */
+    height: auto;
+    border-radius: 8px;
+}
+
+.step-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.step-text h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.step-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-center">
+            <a href="#home">Home</a>
+            <a href="#detail-product">Details Product</a>
+            <a href="Step"> Shoping Step</a>
+        </div>
+        <div class="contact">
+            <a href="https://wa.me/089513199447" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+                Contact Us
+            </a>
+        </div>
+    </header>
+
+
+    <div id="home" class="home-section">
+        <div class="home-content">
+            <h1>Kronomatika Arka</h1>
+            <p>
+                Selamat datang di Kronomatika Arka, jam dinding unik yang memadukan keindahan matematika dengan pesona kebudayaan Jawa Tengah.
+                Produk ini tidak hanya berfungsi sebagai penunjuk waktu, tetapi juga menghadirkan seni dan nilai edukasi dalam setiap detiknya.
+            </p>
+        </div>
+        <div class="order-button">
+            <a href="https://wa.me/6289513199447?text=Halo%20saya%20ingin%20memesan%20Kronomatika%20Arka" target="_blank">Order Now</a>
+        </div>
+        <div class="product-image">
+            <img src="jam bulat.png" alt="Kronomatika Arka">
+        </div>
+    </div>
+    <main class="detail-product" class="detail-product-section">
+        <section class="product">
+            <div class="card">
+                <img src="jam bulat.png" alt="Jam Dinding Modern" width="300" height="200">
+                <h3>Jam Dinding Modern</h3>
+                <p>Jam dinding dengan desain minimalis yang cocok untuk ruang tamu modern.</p>
+                <div class="order-button">
+                    <a href="https://wa.me/6289513199447?text=Halo%20saya%20ingin%20memesan%20Kronomatika%20Arka" target="_blank">Pesan</a>
+                </div>
+                </div>
+            <div class="card">
+                <img src="jam joglo.png" alt="Jam Dinding Klasik" width="300" height="200">
+                <h3>Jam Dinding Klasik Joglo</h3>
+                <p>Jam dinding klasik dengan bahan kayu berkualitas tinggi.</p>
+                <div class="order-button">
+                    <a href="https://wa.me/6289513199447?text=Halo%20saya%20ingin%20memesan%20Kronomatika%20Arka" target="_blank">Pesan</a>
+                </div>
+            </div>
+        </section>
+        <!-- Steps to Shop Section -->
+    <section id="steps-to-shop">
+        <h2>Cara Belanja di Kronomatika Arka</h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-image">
+                </div>
+                <div class="step-text">
+                    <h3>1. Pilih Produk</h3>
+                    <p>Mulailah dengan memilih jam dinding yang sesuai dengan selera dan kebutuhan Anda. Jelajahi berbagai desain unik yang memadukan matematika dan budaya Jawa Tengah.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-image">
+                </div>
+                <div class="step-text">
+                    <h3>2. Tambahkan ke Keranjang</h3>
+                    <p>Setelah memilih produk, klik "Tambahkan ke Keranjang" untuk melanjutkan ke tahap pembelian. Anda bisa menambah lebih dari satu produk jika perlu.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-image">
+                </div>
+                <div class="step-text">
+                    <h3>3. Checkout</h3>
+                    <p>Periksa kembali barang yang Anda pilih, lalu lanjutkan ke halaman checkout untuk mengisi data pengiriman dan memilih metode pembayaran yang sesuai.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-image">
+                </div>
+                <div class="step-text">
+                    <h3>4. Lakukan Pembayaran</h3>
+                    <p>Pilih metode pembayaran yang nyaman bagi Anda. Setelah pembayaran berhasil, pesanan Anda akan segera diproses dan dikirim.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Kronomatika Arka. All rights reserved.</p>
+    </footer>
+</body>
+</html>
